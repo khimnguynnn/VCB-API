@@ -21,7 +21,7 @@ def create_guid() -> str:
 
 class Captcha:
     def __init__(self, captcha_guid: str, proxies: dict = {}) -> None:
-        self.endpoint = "http://127.0.0.1:5000"#https://hngl2808-predict.hf.space"
+        self.endpoint = "https://hngl2808-predict.hf.space" #"http://127.0.0.1:5000"#
         self.guid = captcha_guid
         self.session = requests.Session()
         if proxies:
